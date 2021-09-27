@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 
 
 //All the quotes
@@ -27,7 +27,7 @@ let quotes = [
     "People who wonder if the glass is half empty or full miss the point. The glass is refillable"
 ]
 
-//GET's all quotes from array
+// //GET's all quotes from array
 app.get('/quotes', (req, res) => {
     res.json({all: quotes})
 });
@@ -40,7 +40,10 @@ app.get('/', (req, res) => {
 
 app.listen(port, () => console.log(`Express departing now from http://localhost:${port}`));
 
-module.exports = app;
+
+module.exports = { app }
+
+
 
 
 

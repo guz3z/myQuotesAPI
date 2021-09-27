@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: darkblue;
+}
+
+h1 {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+
+img {
+    border-radius: 150px;
+    margin: 0 30px 0 30px;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
+.container {
+    border-color: white;
+    color: yellow;
+    text-align: center;
+    margin-top: 30%;
+}
